@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07b8ddd1-e8a4-410d-9f45-757081dd0bdc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="codell" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\WorkSoft\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g01l9Wq4XO9yk06dQ0EVdGbMWN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/codell-admin/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/codell-admin/src/main/java/service/ums/impl" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myWorkSpaces\codell\codell-admin\src\main\java\com\org\codell" />
+      <recent name="D:\myWorkSpaces\codell\codell-security\src\main\java\com\org\codell" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.org.codell" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.org.codell.dto" />
+      <recent name="com.org.codell.controller.ums" />
+      <recent name="com.org.codell.dao" />
+      <recent name="com.org.codell.Aspect" />
+      <recent name="com.org.codell.security.aspect" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myWorkSpaces\codell\codell-admin\src\main\java\service\ums\impl" />
+      <recent name="D:\myWorkSpaces\codell\codell-admin\src\main\java\ums" />
+      <recent name="D:\myWorkSpaces\codell\codell-admin\src\main\java\com\org\codell\config" />
+      <recent name="D:\myWorkSpaces\codell\codell-admin\src\main\resources" />
+      <recent name="D:\myWorkSpaces\codell\codell-security\src\main\java\com\org\codell\security" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CodellAdminApplication (1)">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generator" />
+      <module name="codell-dmg" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodellAdminApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="codell-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.org.codell.CodellAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodellAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="codell-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.org.codell.codelladmin.CodellAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Generator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.19330601" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07b8ddd1-e8a4-410d-9f45-757081dd0bdc" name="Default Changelist" comment="" />
+      <created>1597236843548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597236843548</updated>
+      <workItem from="1597236845184" duration="10446000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1000" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1597240091017">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="1000" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1597240091017" />
+    <state x="462" y="349" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597245013793">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="462" y="349" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1597245013793" />
+    <state x="798" y="324" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1597245014955">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="798" y="324" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.834@0.0.1536.834" timestamp="1597245014955" />
+    <state x="600" y="150" key="FileChooserDialogImpl" timestamp="1597244156874">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="600" y="150" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1597244156874" />
+    <state width="1180" height="213" key="GridCell.Tab.0.bottom" timestamp="1597248485166">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597248485166" />
+    <state width="1180" height="213" key="GridCell.Tab.0.center" timestamp="1597248485166">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1597248485166" />
+    <state width="1180" height="213" key="GridCell.Tab.0.left" timestamp="1597248485166">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1597248485166" />
+    <state width="1180" height="213" key="GridCell.Tab.0.right" timestamp="1597248485166">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1597248485166" />
+    <state width="1180" height="213" key="GridCell.Tab.1.bottom" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.1.center" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.1.left" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.1.right" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.2.bottom" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.2.center" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.2.left" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state width="1180" height="213" key="GridCell.Tab.2.right" timestamp="1597248485167">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1180" height="213" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1597248485167" />
+    <state x="270" y="59" key="SettingsEditor" timestamp="1597236894762">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1597236894762" />
+    <state x="815" y="222" key="chooseDestDirectoryDialog" timestamp="1597245198536">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="815" y="222" key="chooseDestDirectoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1597245198536" />
+    <state x="356" y="123" key="new project wizard" timestamp="1597243196612">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="356" y="123" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1597243196612" />
+  </component>
+</project>
