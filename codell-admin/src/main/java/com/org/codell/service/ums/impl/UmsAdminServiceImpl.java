@@ -1,7 +1,7 @@
 package com.org.codell.service.ums.impl;
 
 import com.org.codell.Aspect.AdminUserDetails;
-import com.org.codell.dao.UmsAdminRoleRelationDao;
+import com.org.codell.dao.ums.UmsRelationAdminRoleDao;
 import com.org.codell.dmg.mapper.UmsAdminMapper;
 import com.org.codell.dmg.model.UmsAdmin;
 import com.org.codell.dmg.model.UmsAdminExample;
@@ -26,7 +26,6 @@ import java.util.List;
 
 /**
  * UmsAdminService实现类
- * Created by macro on 2018/4/26.
  */
 @Service
 public class UmsAdminServiceImpl implements UmsAdminService {
@@ -38,7 +37,7 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     @Resource
     private UmsAdminMapper adminMapper;
     @Autowired
-    private UmsAdminRoleRelationDao adminRoleRelationDao;
+    private UmsRelationAdminRoleDao adminRoleRelationDao;
 
 
     @Override

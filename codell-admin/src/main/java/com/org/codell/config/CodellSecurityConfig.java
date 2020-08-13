@@ -11,16 +11,20 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.annotation.Resource;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 /**
  * mall-security模块相关配置
- * Created by macro on 2019/11/9.
  */
 @Configuration
 @EnableWebSecurity
@@ -29,7 +33,7 @@ public class CodellSecurityConfig extends SecurityConfig {
 
     @Autowired
     private UmsAdminService adminService;
-    @Resource
+    @Autowired
     private UmsResourceService resourceService;
 
     @Bean
@@ -44,10 +48,10 @@ public class CodellSecurityConfig extends SecurityConfig {
             @Override
             public Map<String, ConfigAttribute> loadDataSource() {
                 Map<String, ConfigAttribute> map = new ConcurrentHashMap<>();
-//                List<UmsResource> resourceList = resourceService.listAll();
-//                for (UmsResource resource : resourceList) {
-//                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
-//                }
+                List<UmsResource> resourceList = resourceService.listAll();
+                for (UmsResource resource : resourceList) {
+                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
+                }
                 return map;
             }
         };
