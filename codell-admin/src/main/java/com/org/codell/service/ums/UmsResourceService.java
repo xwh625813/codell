@@ -1,7 +1,7 @@
 package com.org.codell.service.ums;
 
 
-import com.org.dmg.model.UmsResource;
+import com.org.codell.dmg.model.UmsResource;
 
 import java.util.List;
 

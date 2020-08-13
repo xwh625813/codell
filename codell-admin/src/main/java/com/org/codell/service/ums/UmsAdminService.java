@@ -1,12 +1,8 @@
 package com.org.codell.service.ums;
 
-import com.org.codell.dto.UmsAdminParam;
-import com.org.dmg.model.UmsAdmin;
-import com.org.dmg.model.UmsPermission;
-import com.org.dmg.model.UmsResource;
-import com.org.dmg.model.UmsRole;
+import com.org.codell.dmg.model.UmsAdmin;
+import com.org.codell.dmg.model.UmsResource;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

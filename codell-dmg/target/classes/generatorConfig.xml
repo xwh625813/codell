@@ -17,7 +17,7 @@
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
 
         <!--        1、配置 Generator通用配置-->
-        <commentGenerator type="com.org.dmg.generator.CommentGenerator">
+        <commentGenerator type="com.org.codell.dmg.generator.CommentGenerator">
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>

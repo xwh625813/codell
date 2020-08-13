@@ -1,6 +1,6 @@
 package com.org.codell.config;
 
-import com.org.dmg.model.UmsResource;
+import com.org.codell.dmg.model.UmsResource;
 import com.org.codell.security.component.DynamicSecurityService;
 import com.org.codell.security.config.SecurityConfig;
 import com.org.codell.service.ums.UmsAdminService;
@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -28,7 +29,7 @@ public class CodellSecurityConfig extends SecurityConfig {
 
     @Autowired
     private UmsAdminService adminService;
-    @Autowired
+    @Resource
     private UmsResourceService resourceService;
 
     @Bean
@@ -43,10 +44,10 @@ public class CodellSecurityConfig extends SecurityConfig {
             @Override
             public Map<String, ConfigAttribute> loadDataSource() {
                 Map<String, ConfigAttribute> map = new ConcurrentHashMap<>();
-                List<UmsResource> resourceList = resourceService.listAll();
-                for (UmsResource resource : resourceList) {
-                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
-                }
+//                List<UmsResource> resourceList = resourceService.listAll();
+//                for (UmsResource resource : resourceList) {
+//                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
+//                }
                 return map;
             }
         };

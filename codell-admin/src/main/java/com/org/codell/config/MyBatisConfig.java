@@ -10,6 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.org.dmg.mapper","com.org.codell.dao"})
+@MapperScan({"com.org.codell.dmg.mapper","com.org.codell.dao"})
 public class MyBatisConfig {
 }
