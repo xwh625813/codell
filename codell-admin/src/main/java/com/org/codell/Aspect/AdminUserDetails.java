@@ -1,7 +1,7 @@
 package com.org.codell.Aspect;
 
-import com.org.dmg.model.UmsAdmin;
-import com.org.dmg.model.UmsResource;
+import com.org.codell.dmg.model.UmsAdmin;
+import com.org.codell.dmg.model.UmsResource;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 
 /**
  * SpringSecurity需要的用户详情
- * Created by macro on 2018/4/26.
  */
 public class AdminUserDetails implements UserDetails {
     private UmsAdmin umsAdmin;

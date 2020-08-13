@@ -1,9 +1,9 @@
 package com.org.codell.dao;
 
-import com.org.dmg.model.UmsRelationAdminRole;
-import com.org.dmg.model.UmsPermission;
-import com.org.dmg.model.UmsResource;
-import com.org.dmg.model.UmsRole;
+import com.org.codell.dmg.model.UmsRelationAdminRole;
+import com.org.codell.dmg.model.UmsPermission;
+import com.org.codell.dmg.model.UmsResource;
+import com.org.codell.dmg.model.UmsRole;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -13,25 +13,13 @@ import java.util.List;
  * Created by macro on 2018/10/8.
  */
 public interface UmsAdminRoleRelationDao {
-    /**
-     * 批量插入用户角色关系
-     */
-    int insertList(@Param("list") List<UmsRelationAdminRole> adminRoleRelationList);
 
     /**
      * 获取用于所有角色
      */
     List<UmsRole> getRoleList(@Param("adminId") Long adminId);
 
-    /**
-     * 获取用户所有角色权限
-     */
-    List<UmsPermission> getRolePermissionList(@Param("adminId") Long adminId);
 
-    /**
-     * 获取用户所有权限(包括+-权限)
-     */
-    List<UmsPermission> getPermissionList(@Param("adminId") Long adminId);
 
     /**
      * 获取用户所有可访问资源
