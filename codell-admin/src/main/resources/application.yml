@@ -15,6 +15,8 @@ mybatis:
   mapper-locations:
     - classpath:dao/**/*.xml
     - classpath*:com/**/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
@@ -72,7 +74,8 @@ minio:
 logging:
   level:
     root: info #日志配置DEBUG,INFO,WARN,ERROR
-    com.macro.mall: debug
+    com.org.codell: debug
 #  file: demo_log.log #配置日志生成路径
 #  path: /var/logs #配置日志文件名称
+
 

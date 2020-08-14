@@ -20,19 +20,24 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 /**
  * 对SpringSecurity的配置的扩展，支持自定义白名单资源路径和查询用户逻辑
- * Created by macro on 2019/11/5.
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired(required = false)
     private DynamicSecurityService dynamicSecurityService;
 
+    /**
+     * 用于配置需要拦截的url路径、jwt过滤器及出异常后的处理器；
+     * @param httpSecurity
+     * @throws Exception
+     */
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry = httpSecurity
                 .authorizeRequests();
         //不需要保护的资源路径允许访问
         for (String url : ignoreUrlsConfig().getUrls()) {
+            System.out.println("urls:    "+url);
             registry.antMatchers(url).permitAll();
         }
         //允许跨域请求的OPTIONS请求
@@ -63,6 +68,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         }
     }
 
+    /**
+     * 用于配置UserDetailsService及PasswordEncoder
+     * @param auth
+     * @throws Exception
+     */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService())

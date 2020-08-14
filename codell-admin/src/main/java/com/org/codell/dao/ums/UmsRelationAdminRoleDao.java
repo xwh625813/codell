@@ -1,7 +1,5 @@
-package com.org.codell.dao;
+package com.org.codell.dao.ums;
 
-import com.org.codell.dmg.model.UmsRelationAdminRole;
-import com.org.codell.dmg.model.UmsPermission;
 import com.org.codell.dmg.model.UmsResource;
 import com.org.codell.dmg.model.UmsRole;
 import org.apache.ibatis.annotations.Param;
@@ -10,9 +8,8 @@ import java.util.List;
 
 /**
  * 自定义后台用户与角色管理Dao
- * Created by macro on 2018/10/8.
  */
-public interface UmsAdminRoleRelationDao {
+public interface UmsRelationAdminRoleDao {
 
     /**
      * 获取用于所有角色

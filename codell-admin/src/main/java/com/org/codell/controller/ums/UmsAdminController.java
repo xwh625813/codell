@@ -2,8 +2,10 @@ package com.org.codell.controller.ums;
 
 
 import com.org.codell.common.tools.CommonResult;
+import com.org.codell.dmg.model.UmsAdmin;
 import com.org.codell.dto.UmsAdminLoginParam;
 import com.org.codell.service.ums.UmsAdminService;
+import com.org.codell.service.ums.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 import java.util.HashMap;
@@ -20,7 +23,6 @@ import java.util.Map;
 
 /**
  * 后台用户管理
- * Created by macro on 2018/4/26.
  */
 @Controller
 @Api(tags = "UmsAdminController", description = "后台用户管理")
@@ -30,9 +32,10 @@ public class UmsAdminController {
     private String tokenHeader;
     @Value("${jwt.tokenHead}")
     private String tokenHead;
-    @Autowired
+    @Resource
     private UmsAdminService adminService;
-
+    @Resource
+    private UmsRoleService umsRoleService;
 
 //    @ApiOperation(value = "用户注册")
 //    @RequestMapping(value = "/register", method = RequestMethod.POST)
@@ -74,22 +77,33 @@ public class UmsAdminController {
 //        return CommonResult.success(tokenMap);
 //    }
 
-//    @ApiOperation(value = "获取当前登录用户信息")
-//    @RequestMapping(value = "/info", method = RequestMethod.GET)
-//    @ResponseBody
-//    public CommonResult getAdminInfo(Principal principal) {
-//        if(principal==null){
-//            return CommonResult.unauthorized(null);
-//        }
-//        String username = principal.getName();
-//        UmsAdmin umsAdmin = adminService.getAdminByUsername(username);
-//        Map<String, Object> data = new HashMap<>();
-//        data.put("username", umsAdmin.getUsername());
-//        data.put("roles", new String[]{"TEST"});
-//        data.put("menus", roleService.getMenuList(umsAdmin.getId()));
-//        data.put("icon", umsAdmin.getIcon());
-//        return CommonResult.success(data);
-//    }
+    @ApiOperation(value = "获取当前登录用户信息")
+    @RequestMapping(value = "/info", method = RequestMethod.GET)
+    @ResponseBody
+    public CommonResult getAdminInfo(Principal principal) {
+        if(principal==null){
+            return CommonResult.unauthorized(null);
+        }
+        String username = principal.getName();
+        UmsAdmin umsAdmin = adminService.getAdminByUsername(username);
+        Map<String, Object> data = new HashMap<>();
+        data.put("username", umsAdmin.getUsername());
+        data.put("roles", new String[]{"TEST"});
+        data.put("menus", umsRoleService.getMenuList(umsAdmin.getId()));
+        data.put("icon", umsAdmin.getIcon());
+        return CommonResult.success(data);
+    }
 
+    @GetMapping(value = "/brand/hasPrem")
+    @ResponseBody
+    public CommonResult hasPrm(){
+        return CommonResult.success("访问到了brand");
+    }
+
+    @GetMapping(value = "/sku/hasPrem")
+    @ResponseBody
+    public CommonResult skuhasPrm(){
+        return CommonResult.success("访问到了sku");
+    }
 
 }
