@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests();
         //不需要保护的资源路径允许访问
         for (String url : ignoreUrlsConfig().getUrls()) {
-            System.out.println("urls:    "+url);
+//            System.out.println("urls:    "+url);
             registry.antMatchers(url).permitAll();
         }
         //允许跨域请求的OPTIONS请求

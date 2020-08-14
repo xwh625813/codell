@@ -35,6 +35,7 @@ redis:
 secure:
   ignored:
     urls: #安全路径白名单
+      - /sku/hasPrem
       - /swagger-ui.html
       - /swagger-resources/**
       - /swagger/**
