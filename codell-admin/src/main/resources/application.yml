@@ -15,8 +15,8 @@ mybatis:
   mapper-locations:
     - classpath:dao/**/*.xml
     - classpath*:com/**/mapper/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
@@ -35,7 +35,6 @@ redis:
 secure:
   ignored:
     urls: #安全路径白名单
-      - /sku/hasPrem
       - /swagger-ui.html
       - /swagger-resources/**
       - /swagger/**
@@ -47,10 +46,10 @@ secure:
       - /webjars/springfox-swagger-ui/**
       - /actuator/**
       - /druid/**
-      - /admin/login
-      - /admin/register
-      - /admin/info
-      - /admin/logout
+      - /codell/admin/login
+      - /codell//admin/register
+      - /codell//admin/info
+      - /codell//admin/logout
       - /minio/upload
 
 aliyun:

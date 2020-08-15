@@ -113,7 +113,7 @@
                 <artifactId>codell-dmg</artifactId>
                 <version>${codell-mbg.version}</version>
             </dependency>
-            <!--mall安全模块-->
+            <!--安全模块-->
             <dependency>
                 <groupId>com.org.codell</groupId>
                 <artifactId>codell-security</artifactId>
